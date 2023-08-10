@@ -1,0 +1,505 @@
+body {
+  letter-spacing: 0 !important;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  color: #333;
+  direction: ltr;
+  font-size: 16px;
+  background: #fff;
+}
+
+* {
+  letter-spacing: 0 !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f3f3;
+  color: #333;
+  direction: ltr;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f3f3;
+  color: #333;
+  direction: ltr;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 16px;
+}
+
+.centerContainer {
+  box-sizing: border-box;
+  margin: 0 auto 15px;
+  max-width: 978px;
+  padding: 20px 3% 60px;
+}
+
+.intro-text {
+  padding: 30px 0;
+  margin-right: 150px;
+}
+
+.submitBtnContainer {
+  margin: 0 auto;
+  max-width: 440px;
+  text-align: center;
+  margin-top: 24px;
+  padding: 0 16px;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.nf-btn {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  line-height: 1rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  font-size: 1rem;
+  min-height: 48px;
+  min-width: 74px;
+  padding: 23.5px 2em;
+  position: relative;
+  width: 100%;
+}
+
+/* SWITCH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.switch-wrapper {
+  position: relative;
+  display: inline-flex;
+  /* margin-right: 300px;
+    margin-bottom: -100px; */
+  padding: 4px;
+  border: 1px solid rgb(214, 26, 26);
+  margin-bottom: 10px;
+  border-radius: 30px;
+  background: var(--white);
+}
+
+.switch-wrapper [type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+  color: #0b0b0b;
+  background-color: #0071eb;
+  z-index: 1;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+  background-color: #0071eb;
+}
+
+.switch-wrapper
+  [type="radio"]:checked#monthly
+  + label[for="yearly"]
+  ~ .highlighter {
+  transform: none;
+}
+
+.switch-wrapper
+  [type="radio"]:checked#yearly
+  + label[for="monthly"]
+  ~ .highlighter {
+  transform: translateX(0%);
+}
+
+.switch-wrapper label {
+  font-size: 12px;
+  z-index: 1;
+  min-width: 80px;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: color 0.25s ease-in-out;
+}
+
+.switch-wrapper label:hover {
+  background: #ccc;
+}
+
+.switch-wrapper .highlighter {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+  background: var(--darkgreen);
+  transition: transform 0.25s ease-in-out;
+}
+
+@media only screen and (min-width: 500px) {
+  .nf-btn {
+    width: auto;
+  }
+}
+
+.nf-btn-solid.nf-btn-primary {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.nf-btn.nf-btn-oversize {
+  font-size: 19px;
+  line-height: 19px;
+  min-height: 60px;
+  min-width: 110px;
+  padding: 20.5px 2em;
+  width: 100%;
+}
+
+.nf-btn-primary {
+  border-radius: 2px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1;
+  min-height: 48px;
+}
+
+button.nf-btn-primary {
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  min-height: 64px;
+}
+
+.nf-btn-solid.nf-btn-primary:hover {
+  background-color: #f6121d;
+}
+
+.planGrid__header {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.planGrid__featureTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.planGrid__selector {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid__planSelector {
+    order: 1;
+  }
+
+  .planGrid--has4Plans .planGrid__selector {
+    width: 65%;
+  }
+}
+
+small {
+  font-size: 80%;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: 500;
+  margin: 0 0 0.4em;
+}
+
+@media screen and (min-width: 740px) {
+  h1 {
+    font-size: 38px;
+  }
+}
+
+ul > li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  margin-left: 1.1em;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid__planChoice {
+    padding: 12px 0;
+  }
+}
+
+.planGrid--has4Plans .planGrid__planChoice {
+  width: 25%;
+}
+
+.planGrid__featureTableRow {
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid__featureTableRow {
+    border-bottom: 1px solid #ccc;
+    min-height: 60px;
+  }
+}
+
+.planGrid__featureTableRow--supportedDevices {
+  align-items: start;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid__featureTableRow:last-child {
+    border: 0;
+  }
+}
+
+b {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 951px) {
+  .planGrid__planInput {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.planGrid__planInput {
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planGrid__selectorLabel {
+  -webkit-touch-callout: none;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media only screen and (min-width: 951px) {
+  .planGrid__planLabel {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.planGrid__planLabel {
+  background: #e50914;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 auto;
+  opacity: 0.6;
+  padding: 18px;
+  text-align: center;
+}
+
+.planGrid__planInput:checked + .planGrid__planLabel {
+  opacity: 1;
+}
+
+.planGrid__planLabel:after {
+  border: 0 solid transparent;
+  border-top-color: #e50914;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid__planInput:checked + .planGrid__planLabel::after {
+    border-width: 10px 10px 0;
+  }
+}
+
+.planGrid__selectorInput:focus {
+  outline: none;
+}
+
+.planGrid__planInput:focus + .planGrid__planLabel {
+  box-shadow: 0 0 3px 0 #e50914;
+}
+
+td {
+  padding: 0;
+}
+
+.planGrid__cell {
+  fill: #a6a6a6;
+  box-sizing: border-box;
+  color: #a6a6a6;
+  display: block;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid__cell {
+    padding: 12px 16px;
+  }
+}
+
+.planGrid__featureCell {
+  fill: #333;
+  color: #333;
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid--has4Plans .planGrid__cell {
+    width: 16.25%;
+  }
+
+  .planGrid--has4Plans .planGrid__featureCell {
+    width: 35%;
+  }
+}
+
+.planGrid__cell:not(.planGrid__featureCell) {
+  fill: #737373;
+  color: #737373;
+  font-weight: 500;
+}
+
+.planGrid__cell.planGrid__cell--isSelected:not(.planGrid__featureCell) {
+  fill: #e50914;
+  color: #e50914;
+}
+
+.planGrid__supportedDevicesCell {
+  padding-bottom: 6px;
+  padding-top: 2px;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 601px),
+  only screen and (min-width: 951px) {
+  .planGrid__supportedDevicesCell {
+    padding-bottom: 12px;
+    padding-top: 8px;
+  }
+}
+
+a {
+  background-color: transparent;
+  color: #0071eb;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.planGrid__supportedDevicesIcon {
+  height: 26px;
+  margin-bottom: -2px;
+  margin-top: 6px;
+  width: 26px;
+}
+
+.planGrid__supportedDevicesLabel {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  margin-bottom: 6px;
+}
+
+/* Add some basic styling to the toggle button */
+cen {
+  align-items: center;
+}
+.toggle {
+  margin-right: 2px;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 17px;
+  padding: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 17px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle-content{
+    display: none;
+    margin-top: 10px;
+}
