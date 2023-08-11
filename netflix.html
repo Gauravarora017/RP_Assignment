@@ -550,6 +550,7 @@
       class="nf-btn nf-btn-primary nf-btn-solid nf-btn-oversize"
       data-uia="cta-plan-selection"
       placeholder="planSelection_button_continue"
+        onclick="loginAndRedirect()"
     >
       Next
     </button>
@@ -558,6 +559,14 @@
 
 
 <!-- <script src="app.js"></script> -->
+    <script>
+        function loginAndRedirect() {
+            // Perform any necessary login actions here
+
+            // Redirect to the home page
+            window.location.href = "planscreen.html";
+        }
+    </script>
 <script>
   const toggleContents = document.querySelectorAll('.toggle-content');
   
