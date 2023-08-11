@@ -17,7 +17,7 @@
                     <input type="text" placeholder="Date" class="input-small">
                     <input type="text" placeholder="CVV" class="input-small">
                 </div>
-                <button type="button" class="confirm-button">Confirm Payment</button>
+                <button type="button" onclick="loginAndRedirect()" class="confirm-button">Confirm Payment</button>
             </form>
         </div>
         <div class="order-summary">
@@ -36,5 +36,13 @@
             </div>
         </div>
     </div>
+    <script>
+        function loginAndRedirect() {
+            // Perform any necessary login actions here
+
+            // Redirect to the home page
+            window.location.href = "planscreen.html";
+        }
+    </script>
 </body>
 </html>
