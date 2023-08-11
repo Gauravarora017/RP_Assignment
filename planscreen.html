@@ -15,7 +15,7 @@
             </div>
             
             <div class="cancel-button">
-                <button id="cancelBtn" class="cancel-btn">Cancel</button>
+                <button onclick="loginAndRedirect()" id="cancelBtn" class="cancel-btn">Cancel</button>
             </div>
         </div>
         
@@ -31,5 +31,13 @@
     </div>
     
     <script src="app.js"></script>
+    <script>
+        function loginAndRedirect() {
+            // Perform any necessary login actions here
+
+            // Redirect to the home page
+            window.location.href = "cancel.html";
+        }
+    </script>
 </body>
 </html>
