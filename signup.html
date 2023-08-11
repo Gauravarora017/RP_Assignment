@@ -23,5 +23,16 @@
         </form>
         <p>Already have an account? <a href="login.html">Login</a></p>
     </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents the form from submitting normally
+
+            // Perform any necessary login actions here
+
+            // Redirect to the home page
+            window.location.href = "login.html";
+        });
+    </script>
 </body>
 </html>
