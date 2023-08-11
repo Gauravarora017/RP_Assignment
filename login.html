@@ -22,5 +22,16 @@
         </form>
         <p>New to MyApp? <a href="signup.html">Sign Up</a></p>
     </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents the form from submitting normally
+
+            // Perform any necessary login actions here
+
+            // Redirect to the home page
+            window.location.href = "netflix.html";
+        });
+    </script>
 </body>
 </html>
